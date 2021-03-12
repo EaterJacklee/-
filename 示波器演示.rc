@@ -1,0 +1,274 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\示波器演示.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\示波器演示.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 示波器演示"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "示波器演示 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2004",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MY_DIALOG DIALOGEX 0, 0, 444, 405
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "模拟示波器"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_SCOPE,7,7,222,199,0,WS_EX_DLGMODALFRAME
+    LTEXT           "",IDC_SCOPE2,6,199,222,199,0,WS_EX_DLGMODALFRAME
+    GROUPBOX        "通道1",IDC_STATIC,229,7,62,65
+    PUSHBUTTON      "开",IDC_BUTTON1,237,25,40,14
+    PUSHBUTTON      "关",IDC_BUTTON2,237,47,40,14
+    GROUPBOX        "总控制台",IDC_STATIC,297,7,105,65
+    PUSHBUTTON      "开",IDC_BUTTON6,305,26,40,14
+    PUSHBUTTON      "关",IDC_BUTTON7,305,46,40,14
+    PUSHBUTTON      "保存参数",IDC_BUTTON3,353,27,40,14
+    PUSHBUTTON      "读取参数",IDC_BUTTON10,353,47,40,14
+    GROUPBOX        "线条参数",IDC_STATIC,228,74,89,79
+    LTEXT           "样式：",IDC_STATIC,231,93,24,12
+    LTEXT           "宽度：",IDC_STATIC,231,116,24,12
+    LTEXT           "颜色：",IDC_STATIC,231,138,24,8
+    COMBOBOX        IDC_COMBO2,265,92,48,63,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,264,114,48,66,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO5,264,135,48,57,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "信号参数",IDC_STATIC,328,74,104,115
+    LTEXT           "振幅:",IDC_STATIC,336,93,20,8
+    LTEXT           "频率:",IDC_STATIC,336,116,20,8
+    LTEXT           "波形：",IDC_STATIC,336,138,24,8
+    LTEXT           "垂直：",IDC_STATIC,336,157,24,8
+    EDITTEXT        IDC_EDIT1,362,92,40,14,ES_AUTOHSCROLL | ES_NUMBER | WS_GROUP
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,401,92,11,14
+    EDITTEXT        IDC_EDIT2,362,114,40,14,ES_AUTOHSCROLL | ES_NUMBER | WS_GROUP
+    CONTROL         "",IDC_SPIN2,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,401,113,11,14
+    COMBOBOX        IDC_COMBO1,362,135,40,57,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT5,364,155,40,14,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "",IDC_SPIN3,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,403,154,11,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ | WS_BORDER,232,198,206,1
+    GROUPBOX        "通道2",IDC_STATIC,229,205,62,65
+    PUSHBUTTON      "开",IDC_BUTTON4,235,221,50,14
+    PUSHBUTTON      "关",IDC_BUTTON5,235,243,50,14
+    GROUPBOX        "滤波模块",IDC_STATIC,301,205,61,63
+    PUSHBUTTON      "干扰开",IDC_BUTTON8,307,220,50,14
+    PUSHBUTTON      "干扰关",IDC_BUTTON9,307,240,50,14
+    GROUPBOX        "放大模块",IDC_STATIC,367,205,67,58
+    PUSHBUTTON      "放大",IDC_BUTTON11,373,221,50,14
+    PUSHBUTTON      "关闭放大",IDC_BUTTON12,374,247,50,14
+    GROUPBOX        "线条参数",IDC_STATIC,229,275,98,80
+    LTEXT           "样式：",IDC_STATIC,236,291,24,12
+    LTEXT           "宽度：",IDC_STATIC,236,315,24,12
+    LTEXT           "颜色：",IDC_STATIC,236,336,24,12
+    COMBOBOX        IDC_COMBO7,268,293,48,50,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO8,268,314,48,56,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO10,268,334,48,46,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "信号参数",IDC_STATIC,338,275,100,105
+    LTEXT           "振幅:",IDC_STATIC,344,291,20,8
+    LTEXT           "频率:",IDC_STATIC,344,315,20,8
+    LTEXT           "波形：",IDC_STATIC,344,336,24,8
+    LTEXT           "垂直：",IDC_STATIC,344,359,24,8
+    EDITTEXT        IDC_EDIT3,377,291,40,14,ES_AUTOHSCROLL | ES_NUMBER | WS_GROUP
+    CONTROL         "",IDC_SPIN4,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,417,291,11,14
+    EDITTEXT        IDC_EDIT4,377,315,40,14,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "",IDC_SPIN5,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,417,315,11,14
+    COMBOBOX        IDC_COMBO4,377,334,40,57,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT6,374,356,40,14,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "",IDC_SPIN6,"msctls_updown32",UDS_WRAP | UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,416,356,11,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "示波器演示 Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "示波器演示"
+            VALUE "LegalCopyright", "版权所有 (C) 2004"
+            VALUE "OriginalFilename", "示波器演示.EXE"
+            VALUE "ProductName", "示波器演示 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 398
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TITLE               BITMAP                  "res\\Title.bmp"
+
+IDB_TRACK               BITMAP                  "res\\Track.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_MY_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 示波器演示(&A)..."
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\示波器演示.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

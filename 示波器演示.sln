@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "示波器演示", "示波器演示.vcxproj", "{79FE3E91-F0F2-4A3A-B2DA-389900F9F566}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79FE3E91-F0F2-4A3A-B2DA-389900F9F566}.Debug|x86.ActiveCfg = Debug|Win32
+		{79FE3E91-F0F2-4A3A-B2DA-389900F9F566}.Debug|x86.Build.0 = Debug|Win32
+		{79FE3E91-F0F2-4A3A-B2DA-389900F9F566}.Release|x86.ActiveCfg = Release|Win32
+		{79FE3E91-F0F2-4A3A-B2DA-389900F9F566}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CAB1022C-8635-4984-BDD9-6276B052050E}
+	EndGlobalSection
+EndGlobal
